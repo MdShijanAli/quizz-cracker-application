@@ -3,9 +3,3 @@
     grid-template-columns: 3fr 1fr;
     margin-top: 50px;
 }
-
-.quiz-details {
-    background-image: url(../../images/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}

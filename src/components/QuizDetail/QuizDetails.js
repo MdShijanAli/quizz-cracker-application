@@ -1,15 +1,14 @@
-import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Answer from '../Answer/Answer';
 import Quiz from '../Quiz/Quiz';
 import './QuizDetails.css'
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const QuizDetails = () => {
     const quizDetails = useLoaderData();
     console.log(quizDetails.data);
-    const { name, questions } = quizDetails.data;
-
-
+    const { name, questions, total } = quizDetails.data;
 
 
 
@@ -28,7 +27,9 @@ const QuizDetails = () => {
                     }
                 </div>
                 <div className='mr-10 mt-10 bg-white shadow-md shadow-black'>
-                    <Answer></Answer>
+                    <Answer
+                        total={total}
+                    ></Answer>
                 </div>
             </div>
         </div>
