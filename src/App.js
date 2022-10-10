@@ -4,6 +4,7 @@ import Blog from './components/Blog/Blog';
 import Contact from './components/Contact/Contact';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import Home from './components/Home/Home';
+import QuizDetails from './components/QuizDetail/QuizDetails';
 import Statics from './components/Statics/Statics';
 import Topics from './components/Topics/Topics';
 import Main from './layouts/Main';
@@ -16,7 +17,7 @@ function App() {
       children: [
         {
           path: '/',
-          loader: async () => fetch('https://openapi.programming-hero.com/api/quiz'),
+          loader: async () => fetch('quizs.json'),
           element: <Home></Home>
         },
         {
@@ -41,6 +42,13 @@ function App() {
         {
           path: '*',
           element: <ErrorPage></ErrorPage>
+        },
+        {
+          path: '/quiz/:quizId',
+          loader: async ({ params }) => {
+            console.log(params);
+          },
+          element: <QuizDetails></QuizDetails>
         }
       ]
     }
