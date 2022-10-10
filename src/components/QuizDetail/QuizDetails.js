@@ -9,6 +9,11 @@ const QuizDetails = () => {
     console.log(quizDetails.data);
     const { name, questions } = quizDetails.data;
 
+
+
+
+
+
     return (
         <div className='quiz-details'>
             <h1 className='text-5xl my-5 font-semibold text-sky-900'>Quiz of {name}</h1>
