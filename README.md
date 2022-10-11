@@ -1,6 +1,29 @@
 # Project Description:
 
+Project Name: Open Educational Resources
 Project Live Link: https://assignment-9-educational-website-shij.netlify.app/
+
+## Works Steps:
+
+1. At first connect my project with github
+2. Delete unneccerary file from App.js file
+3. Make Some needed Components
+4. Make a Header Component where i create a menu
+5. Make routes in App.js file
+6. Here i set path and element and make children and add here all routes
+7. Then make loader function and get data
+8. Get data using useLoader function in my Home Component
+9. Then distructure some data and use map to get single data
+10. After Complete Home page i make another loader using params and get here quiz details page
+11. Then distructure some items and show here all quizs and options
+12. Then Install Toastify and setup quiz options
+13. Make EyeIcon and connect here toastify and show Correct Answeer
+14. Make Blog Page
+15. Make Statics Page using Quiz Info
+16. Make a Contact page
+17. Make Responsive
+
+# Hurrah Done !!!!!
 
 # Getting Started with Create React App
 
