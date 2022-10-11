@@ -1,6 +1,6 @@
-import React, { PureComponent, useContext, useEffect, useState } from 'react';
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import axios from 'axios';
+import React from 'react';
+import { BarChart, Bar, XAxis, YAxis, Tooltip, } from 'recharts';
+
 
 const Statics = () => {
 

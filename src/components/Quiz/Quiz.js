@@ -38,13 +38,20 @@ const Quiz = ({ qs, questions }) => {
     }
 
 
+
+    for (let sl = 1; sl <= questions.length; sl++) {
+        console.log(sl);
+    }
+
+
+
     return (
 
         <div className='px-20 border-2  mb-20 bg-white shadow-md shadow-black'>
 
 
             <div className='flex items-center justify-between'>
-                <h2 className='my-10 text-sky-800 font-semibold text-xl'>Quiz {questions.length}:  {question}</h2>
+                <h2 className='my-10 text-sky-800 font-semibold text-xl'>Quiz  :  {question}</h2>
                 <EyeIcon onClick={() => handleSeeCorrectAnswer(correctAnswer)} className='w-10 h-10 text-sky-800' title='Click here to see Answer'></EyeIcon>
             </div>
 

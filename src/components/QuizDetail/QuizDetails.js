@@ -8,10 +8,19 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const QuizDetails = () => {
     const quizDetails = useLoaderData();
-    console.log(quizDetails.data);
+    // console.log(quizDetails.data);
     const { name, questions, total } = quizDetails.data;
 
-    console.log(questions.length)
+
+    // console.log(questions.length);
+
+
+
+
+
+
+
+
 
     return (
 
@@ -25,6 +34,7 @@ const QuizDetails = () => {
                         questions.map(qs => <Quiz
                             key={qs.id}
                             qs={qs}
+
                             questions={questions}
                         ></Quiz>)
                     }
