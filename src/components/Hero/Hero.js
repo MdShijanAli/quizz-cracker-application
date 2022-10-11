@@ -15,8 +15,8 @@ const Hero = () => {
                         <div className="flex justify-center items-center h-full">
                             <div className="text-center text-white px-6 md:px-12">
                                 <h1 className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12">Learn Programming with Fun <br /><span>for your Career</span></h1>
-                                <Link className="inline-block px-7 py-3 mr-1.5 border-2 border-white text-white font-medium text-sm leading-snug uppercase rounded-full shadow-md hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" role="button">Get started</Link>
-                                <Link className="inline-block px-7 py-3 border-2 border-transparent bg-transparent text-white font-medium text-sm leading-snug uppercase rounded-full focus:outline-none focus:ring-0 transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" role="button">Learn more</Link>
+                                <Link className="inline-block px-7 py-3 mr-1.5 border-2 border-white text-white hover:text-black font-medium text-sm leading-snug uppercase rounded-full shadow-md hover:bg-white    transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" to='/contact' role="button">Contact Us</Link>
+                                <Link className="inline-block px-7 py-3 border-2 border-transparent bg-transparent hover:border-white text-white font-medium text-sm leading-snug uppercase rounded-full focus:outline-none focus:ring-0 transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" to='/blog' role="button">Learn more</Link>
                             </div>
                         </div>
                     </div>

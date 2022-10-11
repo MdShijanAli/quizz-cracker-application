@@ -7,27 +7,21 @@ const Statics = () => {
     const data = [
         {
             name: 'React',
-            quizs: 8,
-            pv: 2400,
-            amt: 2400,
+            quizs: 8
         },
         {
             name: 'Javascript',
-            quizs: 9,
-            pv: 2400,
-            amt: 2400,
+            quizs: 9
         },
         {
             name: 'CSS',
-            quizs: 8,
-            pv: 2400,
-            amt: 2400,
+            quizs: 8
+
         },
         {
             name: 'Git',
-            quizs: 11,
-            pv: 2400,
-            amt: 2400,
+            quizs: 11
+
         }
 
     ]
@@ -39,12 +33,14 @@ const Statics = () => {
 
 
             <div className='mx-60'>
+
                 <BarChart width={800} height={500} data={data}>
                     <Bar dataKey="quizs" fill="#8884d8" />
                     <XAxis dataKey="name"></XAxis>
                     <YAxis></YAxis>
                     <Tooltip></Tooltip>
                 </BarChart>
+
             </div>
         </div>
     );

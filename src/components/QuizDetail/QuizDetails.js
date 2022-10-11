@@ -11,7 +11,7 @@ const QuizDetails = () => {
     console.log(quizDetails.data);
     const { name, questions, total } = quizDetails.data;
 
-
+    console.log(questions.length)
 
     return (
 
@@ -25,6 +25,7 @@ const QuizDetails = () => {
                         questions.map(qs => <Quiz
                             key={qs.id}
                             qs={qs}
+                            questions={questions}
                         ></Quiz>)
                     }
                 </div>
