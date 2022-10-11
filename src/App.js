@@ -24,11 +24,8 @@ function App() {
 
         },
         {
-          path: '/topics',
-          element: <Topics></Topics>
-        },
-        {
           path: '/statics',
+
           element: <Statics></Statics>
         },
         {

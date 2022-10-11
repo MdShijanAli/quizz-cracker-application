@@ -5,6 +5,7 @@ import './QuizDetails.css'
 import 'react-toastify/dist/ReactToastify.css';
 
 
+
 const QuizDetails = () => {
     const quizDetails = useLoaderData();
     console.log(quizDetails.data);
@@ -12,10 +13,11 @@ const QuizDetails = () => {
 
 
 
-
     return (
+
+
         <div className='quiz-details'>
-            <h1 className='text-5xl my-5 font-semibold text-sky-900'>Quiz of {name}</h1>
+            <h1 className='text-5xl mt-10 font-semibold text-sky-900'>Quiz of {name}</h1>
 
             <div className='quiz-grid '>
                 <div className='p-10'>
@@ -32,7 +34,11 @@ const QuizDetails = () => {
                     ></Answer>
                 </div>
             </div>
+
+
         </div>
+
+
     );
 };
 
