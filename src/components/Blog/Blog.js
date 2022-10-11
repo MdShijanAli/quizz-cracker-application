@@ -5,7 +5,7 @@ const Blog = () => {
         <div>
             <h2 className='text-5xl my-10 font-semibold'>Blog Page</h2>
 
-            <div className='mx-52'>
+            <div className='md:mx-32 sm:mx-10'>
                 <div className='bg-white p-10 rounded-md mb-20 shadow-lg shadow-slate-800'>
                     <h1 className='text-3xl mb-5'>What is the purpose of react router?</h1>
                     <p>React Router is an API for React applications. Most current code is written with React Router 3, although version 4 has been released. React Router uses dynamic routing.</p>

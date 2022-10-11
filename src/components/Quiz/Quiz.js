@@ -15,6 +15,7 @@ const Quiz = ({ qs }) => {
 
 
     const handleSelect = option => {
+
         if (option === correctAnswer) {
             toast('WoW!!! Correct Answer', { position: toast.POSITION.TOP_CENTER });
             const newCorrect = [...correct, option];
@@ -24,6 +25,7 @@ const Quiz = ({ qs }) => {
         else {
             toast('Incorrect Answer!!!', { position: toast.POSITION.TOP_CENTER })
         }
+
     }
     console.log(correct.length);
 
@@ -37,7 +39,7 @@ const Quiz = ({ qs }) => {
             <h2 className='my-10  text-2xl'>Quiz :  {question}</h2>
 
 
-            <div className='grid grid-cols-2 gap-5 mb-20'>
+            <div className='grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-5 mb-20'>
                 {
                     options.map(option => <Option
                         option={option}
