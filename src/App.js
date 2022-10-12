@@ -3,6 +3,7 @@ import './App.css';
 import Blog from './components/Blog/Blog';
 import Contact from './components/Contact/Contact';
 import ErrorPage from './components/ErrorPage/ErrorPage';
+import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import QuizDetails from './components/QuizDetail/QuizDetails';
 import Statics from './components/Statics/Statics';
@@ -53,6 +54,7 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={router}></RouterProvider>
+      <Footer></Footer>
     </div>
   );
 }

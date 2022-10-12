@@ -1,5 +1,5 @@
-import React from 'react';
-import { BarChart, Bar, XAxis, YAxis, Tooltip, } from 'recharts';
+import React, { PureComponent } from 'react';
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, } from 'recharts';
 
 
 const Statics = () => {
@@ -32,16 +32,16 @@ const Statics = () => {
 
 
 
-            <div className='mx-60'>
 
+            <ResponsiveContainer height="100%" aspect={5}>
                 <BarChart width={800} height={500} data={data}>
                     <Bar dataKey="quizs" fill="#8884d8" />
-                    <XAxis dataKey="name"></XAxis>
-                    <YAxis></YAxis>
+                    <XAxis dataKey="name" tick={{ stroke: 'blue' }}></XAxis>
+                    <YAxis tick={{ stroke: 'red' }}></YAxis>
                     <Tooltip></Tooltip>
                 </BarChart>
+            </ResponsiveContainer>
 
-            </div>
         </div>
     );
 };

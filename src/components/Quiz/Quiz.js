@@ -5,30 +5,34 @@ import { useState } from 'react';
 import { EyeIcon } from '@heroicons/react/24/solid'
 
 
-
 const Quiz = ({ qs, questions }) => {
-    // console.log(qs);
+    console.log(qs);
 
 
+    const [correct, setCorrect] = useState(0);
 
-
-    const [correct, setCorrect] = useState([]);
+    const [wrong, setWrong] = useState(0)
 
 
     const handleSelect = option => {
 
         if (option === correctAnswer) {
             toast('WoW!!! Correct Answer', { position: toast.POSITION.TOP_CENTER })
-            const newCorrect = [...correct, option];
-            setCorrect(newCorrect);
+
+            setCorrect(correct + 1);
 
         }
         else {
             toast('Incorrect Answer!!!', { position: toast.POSITION.TOP_CENTER })
+
+            setWrong(wrong + 1);
+
         }
 
     }
-    // console.log(correct.length);
+    console.log('correct', correct, 'wrong', wrong);
+
+
 
     const { question, options, correctAnswer } = qs;
 
@@ -40,12 +44,13 @@ const Quiz = ({ qs, questions }) => {
 
 
     for (let sl = 1; sl <= questions.length; sl++) {
-        console.log(sl);
+        // console.log(sl);
     }
 
 
 
     return (
+
 
         <div className='px-20 border-2  mb-20 bg-white shadow-md shadow-black'>
 
@@ -66,6 +71,7 @@ const Quiz = ({ qs, questions }) => {
                 <ToastContainer></ToastContainer>
             </div>
         </div>
+
 
     );
 };

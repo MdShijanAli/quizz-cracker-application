@@ -9,11 +9,11 @@ const Contact = () => {
         <form action="#">
 
 
-            <div className="flex justify-center items-center bg-white">
+            <div className="flex justify-center items-center ">
 
-                <div className="container mx-auto my-4 px-4 lg:px-20">
+                <div className="container mx-auto my-4 px-4 lg:px-20 ">
 
-                    <div className="w-full mx-auto p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
+                    <div className="bg-white w-full mx-auto p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl shadow-black">
                         <div className="flex">
                             <h1 className="font-bold uppercase text-5xl">Send us a  message</h1>
                         </div>
@@ -32,7 +32,7 @@ const Contact = () => {
                         </div>
                         <div className="my-2 w-1/2 lg:w-1/4">
                             <button className="uppercase text-sm font-bold tracking-wide bg-blue-900 text-gray-100 p-3 rounded-lg w-full 
-                      focus:outline-none focus:shadow-outline">
+                       shadow-lg hover:bg-indigo-700 shadow-indigo-900">
                                 Send Message
                             </button>
 
