@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, } from 'recharts';
 
 
@@ -32,8 +32,7 @@ const Statics = () => {
 
 
 
-
-            <ResponsiveContainer height="100%" aspect={5}>
+            <ResponsiveContainer className='mx-auto' width="70%" height={500}>
                 <BarChart width={800} height={500} data={data}>
                     <Bar dataKey="quizs" fill="#8884d8" />
                     <XAxis dataKey="name" tick={{ stroke: 'blue' }}></XAxis>
@@ -41,6 +40,7 @@ const Statics = () => {
                     <Tooltip></Tooltip>
                 </BarChart>
             </ResponsiveContainer>
+
 
         </div>
     );

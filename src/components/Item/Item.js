@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Item = ({ item }) => {
     const { logo, name, id, total } = item;
-    console.log(item)
+
     return (
         <div>
             <div className='item border-8  border-white rounded-xl shadow-2xl shadow-neutral-900'>

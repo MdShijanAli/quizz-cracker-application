@@ -1,50 +1,29 @@
 import Option from '../Option/Option';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useState } from 'react';
 import { EyeIcon } from '@heroicons/react/24/solid'
 
 
 const Quiz = ({ qs, questions }) => {
-    console.log(qs);
-
-
-    const [correct, setCorrect] = useState(0);
-
-    const [wrong, setWrong] = useState(0)
 
 
     const handleSelect = option => {
 
         if (option === correctAnswer) {
             toast('WoW!!! Correct Answer', { position: toast.POSITION.TOP_CENTER })
-
-            setCorrect(correct + 1);
-
         }
         else {
             toast('Incorrect Answer!!!', { position: toast.POSITION.TOP_CENTER })
 
-            setWrong(wrong + 1);
-
         }
 
     }
-    console.log('correct', correct, 'wrong', wrong);
-
-
 
     const { question, options, correctAnswer } = qs;
 
 
     const handleSeeCorrectAnswer = correctAnswer => {
         toast(correctAnswer, { position: toast.POSITION.TOP_CENTER })
-    }
-
-
-
-    for (let sl = 1; sl <= questions.length; sl++) {
-        // console.log(sl);
     }
 
 
@@ -56,7 +35,8 @@ const Quiz = ({ qs, questions }) => {
 
 
             <div className='flex items-center justify-between'>
-                <h2 className='my-10 text-sky-800 font-semibold text-xl'>Quiz  :  {question}</h2>
+
+                <h2 className='my-10 text-sky-800 font-semibold text-xl'>Quiz :  {question}</h2>
                 <EyeIcon onClick={() => handleSeeCorrectAnswer(correctAnswer)} className='w-10 h-10 text-sky-800' title='Click here to see Answer'></EyeIcon>
             </div>
 

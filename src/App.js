@@ -7,7 +7,6 @@ import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import QuizDetails from './components/QuizDetail/QuizDetails';
 import Statics from './components/Statics/Statics';
-import Topics from './components/Topics/Topics';
 import Main from './layouts/Main';
 
 function App() {

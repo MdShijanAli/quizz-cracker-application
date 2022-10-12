@@ -1,34 +1,42 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import logo from '../../images/logo.png';
 import './Header.css';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
+import Link from '../Link/Link';
+import logo from '../../images/logo.png';
 
 const Header = () => {
     const [open, setOpen] = useState(false);
+
+    const routes = [
+        { id: 1, name: 'Home', path: '/' },
+        { id: 2, name: 'Statics', path: '/statics' },
+        { id: 3, name: 'Blog', path: '/blog' },
+        { id: 4, name: 'Contact', path: '/contact' },
+    ]
     return (
-        <nav className='header sticky top-0 z-50 shadow-lg shadow-slate-800'>
-            <div onClick={() => setOpen(!open)} className='md:hidden w-14 h-14 text-slate-900'>
-                {
+        <nav className='header md:flex items-center justify-around bg-white sticky top-0 z-50 shadow-lg shadow-slate-800'>
 
-                    open ? <XMarkIcon></XMarkIcon> : <Bars3Icon ></Bars3Icon>
+            <div className='flex mx-5 items-center justify-between'>
+                <div onClick={() => setOpen(!open)} className='md:hidden w-14 h-14 text-slate-900'>
+                    {
 
-                }
+                        open ? <XMarkIcon></XMarkIcon> : <Bars3Icon ></Bars3Icon>
+
+                    }
+                </div>
+
+
+                <div>
+                    <img src={logo} alt="" />
+                </div>
             </div>
-
-            <div>
-                <img src={logo} alt="" />
-            </div>
-            <div className={` absolute md:static duration-500 ease-in ${open ? 'top-20' : 'top-[-350px]'}`}>
-                <ul className='md:flex w-full'>
-
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/statics">Statics</Link></li>
-                    <li><Link to="/blog">Blog</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
-
+            <nav>
+                <ul className={`md:flex w-full p-5 bg-white justify-center absolute duration-1000 ease-in md:static ${open ? 'top-15' : 'top-[-350px]'}`}>
+                    {
+                        routes.map(route => <Link key={route.id} route={route}></Link>)
+                    }
                 </ul>
-            </div>
+            </nav>
         </nav>
     );
 };
