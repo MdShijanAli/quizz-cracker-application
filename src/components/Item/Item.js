@@ -1,6 +1,5 @@
 import React from 'react';
 import { ArrowLongRightIcon } from '@heroicons/react/24/solid';
-import './Item.css';
 import { Link } from 'react-router-dom';
 
 const Item = ({ item }) => {
@@ -8,7 +7,7 @@ const Item = ({ item }) => {
     console.log(item)
     return (
         <div>
-            <div className='item border-8 border-white rounded-xl shadow-2xl shadow-neutral-900'>
+            <div className='item border-8  border-white rounded-xl shadow-2xl shadow-neutral-900'>
                 <div className=''>
                     <img src={logo} alt="" />
                 </div>

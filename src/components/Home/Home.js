@@ -13,7 +13,7 @@ const Home = () => {
 
             <Hero></Hero>
 
-            <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-4 m-20'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-4 m-10'>
                 {
                     items.data.map(item => <Item
                         key={item.id}
